@@ -101,7 +101,15 @@ var anyStartingWithB = function(words){
 // Edge Case: If `n` is less than zero, return `null`.
 var hasAtLeastNVowels = function(word, n){
   // Your Code Here
-};
+  if (n < 0) {
+    return null;
+  }
+  if(word.match(/[aeiou]|[AEIOU]/g).length >= n) {
+    // David Kim showed me this method
+      return true;
+    }
+  return false;
+  }
 
 // #8
 // Input: an array of words
@@ -109,6 +117,13 @@ var hasAtLeastNVowels = function(word, n){
 //          vowels
 var wordsWithAtLeastTwoVowels = function(words){
   // Your Code Here
+  var array2 = [];
+  for (var i = 0; i < words.length; i++) {
+    if (hasAtLeastNVowels(words[i], 2)) {
+      array2.push(words[i]);
+    }
+  }
+  return array2;
 };
 
 // #9
@@ -117,6 +132,14 @@ var wordsWithAtLeastTwoVowels = function(words){
 // Edge Case: If the array is empty, the function should return `true`.
 var allHaveAtLeastTwoVowels = function(words){
   // Your Code Here
+  for (var i = 0; i < words.length; i++) {
+    if (!hasAtLeastNVowels(words[i], 2)){
+      return false;
+    } else {
+      return true;
+    }
+  };
+  return true;
 };
 
 // #10
