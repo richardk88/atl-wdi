@@ -187,7 +187,7 @@ var buildObjectFromWords = function(words){
   }
   return result;
 };
-
+//had to look at solutions for this one
 
 /// DO NOT EDIT BELOW THIS LINE ///
 module.exports = {
