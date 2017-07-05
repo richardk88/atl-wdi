@@ -77,6 +77,10 @@ for (var i = 1; i < 11; i++) {
   resTen += product;
 }
 
+/*for (var i = 0; i =< 10; i++) {
+  resTen += Math.pow(i, i);
+}*/
+
 /// DO NOT EDIT BELOW THIS LINE ///
 module.exports = {
   one: resOne,
