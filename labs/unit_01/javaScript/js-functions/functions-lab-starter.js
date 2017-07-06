@@ -19,13 +19,14 @@ function maxOfThree(x, y, z) {
 }
 
 // Question 3
-function isCharacterAVowel(word) {
+function isCharacterAVowel(character) {
 	var vowels = ['a', 'e', 'i', 'o', 'u'];
-	if (vowels.indexOf(word) !== -1) {
-		return true;
-	} else {
-		return false;
+	for(var i = 0; i < vowels.length; i++) {
+		if (vowels[i] === character.toLowerCase()){
+			return true;
+		}
 	}
+	return false;
 }
 
 // Question 4
