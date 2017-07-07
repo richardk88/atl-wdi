@@ -1,17 +1,27 @@
-/*
+//3) Check to see if the Dice Roll has been hit, if it has run the diceRoll function.
 
-Creating a page where every time the user hits the "Roll Dice" button, the screen randomly updates the two dice. Use the html and css code included in the starter code folder to get started.
+document.getElementById('roll-dice').onclick = diceRoll;
+//generate a random number between 1-6 and store to a var, random1
+function diceRoll () {
+var random1 = Math.floor((Math.random() * 6) + 1);
 
-1) Write down pseudocode for the following program.
+//generate a random number between 1-6 and store to a var, random2
 
-2) Follow the steps below to write your code.
-* generate a random number between 1 - 6 and store to a variable, random1
-* generate a random number between 1 - 6 and store to a variable, random2
-* combine 'dice-' and random1 to form the random class for the first die, firstDie
-* combine 'dice-' and random2 to form the random class for the second die, secondDie
-* get the first die by ID and update the class to firstDie (hint: document.getElementById)
-* get the first die by ID and update the class to secondDie (hint:document.getElementById)
+var random2 = Math.floor((Math.random() * 6) + 1);
 
-3) Check to see if the Dice Roll has been hit, if it has run the diceRoll function.
+//combine 'dice-' and random1 to form the random class for the first die, firstDie
 
-*/
+var firstDie = 'dice-' + random1;
+
+//combine 'dice-' and random2 to form the random class for the second die, secondDie
+
+var secondDie = 'dice-' + random2;
+
+//get the first die by ID and update the class to firstDie (hint: document.getElementById)
+
+document.getElementById('first-die').className = firstDie;
+
+//get the first die by ID and update the class to secondDie (hitn:document.getElementById)
+document.getElementById('second-die').className = secondDie;
+}
+
