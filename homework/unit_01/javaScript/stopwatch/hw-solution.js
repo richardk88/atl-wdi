@@ -37,7 +37,7 @@ const Stopwatch = {
   start: function(){
     if (!this.isRunning) {
       this.isRunning = true;
-      this.tickClock(); // kick-start the ticking of the clock
+      this.tickClock= (); // kick-start the ticking of the clock
     }
   },
   stop: function(){
