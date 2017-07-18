@@ -1,4 +1,4 @@
-#What are the top 6 highest-starred npm packages? (Hint: reduce the browser width to see a better list view)
+##What are the top 6 highest-starred npm packages? (Hint: reduce the browser width to see a better list view)
 
 lodash, request, async, chalk, express, bluebird
 
