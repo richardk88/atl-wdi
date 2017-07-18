@@ -19,8 +19,13 @@ lodash, request, async, chalk, express, bluebird
 3.How many downloads did this package have in the last month?
 
 *LODASH - 42,048,376
+
 *REQUEST - 23,986,721
+
 *ASYNC - 45,047,894
+
 *CHALK - 25,598,095
+
 *EXPRESS - 13,114,712
+
 *BLUEBIRD - 15,794,332
