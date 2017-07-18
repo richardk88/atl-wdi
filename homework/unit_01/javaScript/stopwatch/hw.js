@@ -3,7 +3,6 @@
 // See LICENSE for details.
 
 /// Data & Core Business Logic ///
-
 const Stopwatch = {
   tickClock: function(){
     if (Stopwatch.isRunning) {
@@ -24,16 +23,16 @@ const Stopwatch = {
   //if the number of milliseconds reaches 1000,
   if (this.millisecs >= 1000) {
     //it resets the number of milliseconds to zero.
-    this.millisecs = 0;
+    this.millisecs -= 1000;
     //it increments the number of seconds.
-    this.secs ++;
+    this.secs += 1;
   }
   //if the number of seconds reaches 60,
   if (this.secs >= 60) {
     //it resets the number of seconds to zero.
-    this.secs = 0;
+    this.secs -= 60;
     //it increments the number of minutes.
-    this.mins ++;
+    this.mins += 1;
   }
   },
   reset: function(){
@@ -50,7 +49,7 @@ const Stopwatch = {
     //it sets the state of the stopwatch to 'running'
     this.isRunning = true;
     //it calls `tickClock` in order to start the ticking of the clock
-    this.tickClock = ();
+    this.tickClock();
   //if the stopwatch is running:
     //it does nothing
   }
@@ -84,9 +83,9 @@ const ViewEngine = {
   updateTimeDisplay: function(mins, secs, millisecs){
   //displays values of mins, secs, & (tens of) millisecs elapsed in DOM element w/ id `time-display`, in the format
   //`MM:SS:ss`, starting with `00:00:00`.
-    document.getElementById('mins').innerHTML = ViewHelpers.zeroFill(mins, 2);
-    document.getElementById('secs').innerHTML = ViewHelpers.zeroFill(secs, 2);
-    document.getElementById('millisecs').innerHTML = ViewHelpers.zeroFill(millisecs/10, 2);
+    $('#mins').innerHTML = ViewHelpers.zeroFill(mins, 2);
+    $('#secs').innerHTML = ViewHelpers.zeroFill(secs, 2);
+    $('#millisecs').innerHTML = ViewHelpers.zeroFill(millisecs/10, 2);
   //it pads the values of mins, secs, & (tens of) millisecs w/ zeros so that the strings are at least two characters long.
   },
   updateLapListDisplay: function(laps){
@@ -127,8 +126,8 @@ const ViewHelpers = {
 const AppController = {
   handleClockTick: function(){
   //retrieves current time values (mins, secs, millisecs) from `Stopwatch`
-  ViewEngine.updateTimeDisplay(Stopwatch.mins, Stopwatch.secs, Stopwatch.millisecs);
   //calls `updateTimeDisplay` on `ViewEngine`
+  ViewEngine.updateTimeDisplay(Stopwatch.mins, Stopwatch.secs, Stopwatch.millisecs);
   },
   handleClickStart: function() {
   //if stopwatch isn't running
@@ -168,9 +167,10 @@ const AppController = {
   }
 };
 
-window.onload = function(){
+$(function() {
   // Attach AppController methods to the DOM as event handlers here.
   $('#start').on('click', function() {
+    event.stopPropagation();
     AppController.handleClickStart;
   })
 
@@ -181,4 +181,5 @@ window.onload = function(){
   $('#lap').on('click', function() {
     AppController.handleClickLap;
   })  
-};
+// };
+});
