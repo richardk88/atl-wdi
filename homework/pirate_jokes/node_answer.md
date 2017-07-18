@@ -1,8 +1,8 @@
-1. What are the top 6 highest-starred npm packages? (Hint: reduce the browser width to see a better list view)
+##What are the top 6 highest-starred npm packages? (Hint: reduce the browser width to see a better list view)
 
 lodash, request, async, chalk, express, bluebird
 
-2. Describe what the package is, in a few words or sentences (you may have to refer to the original documentation listed under each links' description).
+##Describe what the package is, in a few words or sentences (you may have to refer to the original documentation listed under each links' description).
 
 *LODASH - A modern JavaScript utility library delivering modularity, performance & extras.
 
@@ -16,7 +16,7 @@ lodash, request, async, chalk, express, bluebird
 
 *BLUEBIRD - A fully featured promise library with focus on innovative features and performance
 
-3.How many downloads did this package have in the last month?
+##How many downloads did this package have in the last month?
 
 *LODASH - 42,048,376
 
