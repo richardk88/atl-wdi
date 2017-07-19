@@ -5,18 +5,17 @@ const app = express();
 app.set('view engine', 'hbs');
 app.set('views', './views');
 
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res) => {
 	res.send('Welcome to Pizza Express!');
 })
 
-app.get('/topping/:type', (req, res) => {
-	res.send(`${req.param.type} pizza! Good choice.`);
-})
+const toppingsController = require('./controllers/topping_controller');
+app.use('/topping', toppingsController);
 
-app.get('/order/:amount/:pizzaSize', (req, res) => {
-	res.send(`Your order for ${req.params.amount} ${req.params.pizzaSize} pizzas will be ready in 1 minute!`);
-});
-
+const orderController = require('./controllers/order_controller');
+app.use('/order', orderController);
 
 var port = process.env.PORT || 3000;
 
