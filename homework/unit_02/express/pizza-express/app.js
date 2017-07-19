@@ -19,6 +19,10 @@ app.use('/topping', toppingsController);
 const orderController = require('./controllers/order_controller');
 app.use('/order', orderController);
 
+app.get('*', (req, res) => {
+	res.send('404 Page Not Found')
+})
+
 var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
