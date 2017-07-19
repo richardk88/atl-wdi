@@ -8,8 +8,10 @@ app.set('views', './views');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', (req, res) => {
-	res.send('Welcome to Pizza Express!');
-})
+	res.render('index', {
+		data:'Welcome to Pizza Express!'
+	});
+});
 
 const toppingsController = require('./controllers/topping_controller');
 app.use('/topping', toppingsController);
