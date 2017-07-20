@@ -1,1 +1,18 @@
-module.exports = { };
+module.exports = { 
+	seededTodos: [
+    {
+      description: "get beer",
+      urgent: true
+    }, {
+      description: "dry cleaning",
+      urgent: false
+    }, {
+      description: 'walk the dog',
+      urgent: true
+    }, {
+      description: 'drink a beer',
+      urgent: true
+    }
+  ]
+};
+
