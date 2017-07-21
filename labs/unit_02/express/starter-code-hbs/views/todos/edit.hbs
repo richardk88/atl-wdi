@@ -1,0 +1,18 @@
+<h1>Edit {{todo.description}}</h1>
+
+<form method="POST" action="/todos/{{id}}?_method=PUT">
+	<div>
+		<label for='description'>Description: </label>
+		<input type='text' name='description' value='{{todo.description}}'>
+	</div>
+
+	<div>
+		<label for="urgent">Urgent: </label>
+		{{#if todo.urgent}}
+		<span>Yes</span><input type="radio" name="urgent" value="true" checked>
+		<span>No</span><input type="radio" name="urgent" value="false">
+		{{/if}}
+	</div>
+
+	<button>UPDATE TODO</button>
+</form>

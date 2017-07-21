@@ -3,6 +3,10 @@
   {{#each todos}}
     <li>Description: <a href="/todos/{{@index}}">{{description}}</a></li>
     <li>Urgent: {{urgent}}</li>
+	<form method="POST" action="/todos/{{@index}}?_method=DELETE">
+		<button>DELETE</button>
+	</form>
+
     <br>
   {{/each}}
   	<a href="/todos/new">Create A New Todo</a>
