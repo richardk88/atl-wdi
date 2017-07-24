@@ -11,11 +11,11 @@ class Tamagotchis {
     }
     cry () {
         this.foodInTummy--;
-        console.log(this.name + 'WAHH!!!');
+        console.log(this.name + ' WAHH!!!');
     }
     puke () {
         this.foodInTummy--;
-        console.log(this.foodInTummy + 'Wahhh!!!');
+        console.log(this.foodInTummy + ' Wahhh!!!');
     }
     yawn () {
         this.restedness--;
@@ -52,7 +52,3 @@ creature1.cry();
 creature2.cry();
 creature1.puke();
 creature2.yawn();
-
-player.feedTamagotchi(creature1);
-player.medicateTamagotchi(creature2);
-player.knockOutTamagotchi(creature1);
