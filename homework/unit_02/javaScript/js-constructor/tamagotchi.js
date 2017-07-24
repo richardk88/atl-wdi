@@ -35,3 +35,7 @@ creature1.cry();
 creature2.cry();
 creature1.puke();
 creature2.yawn();
+
+player.feedTamagotchi(creature1);
+player.medicateTamagotchi(creature2);
+player.knockOutTamagotchi(creature1);
