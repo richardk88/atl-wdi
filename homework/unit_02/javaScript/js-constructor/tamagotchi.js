@@ -13,6 +13,14 @@ class Tamagotchis {
         this.foodInTummy--;
         console.log(this.name + 'WAHH!!!');
     }
+    puke () {
+        this.foodInTummy--;
+        console.log(this.foodInTummy + 'Wahhh!!!');
+    }
+    yawn () {
+        this.restedness--;
+        console.log(this.name + ' has current restedness of: ' + this.restedness);
+    }
 }
 
 //create new Tamagotchis
@@ -25,3 +33,5 @@ console.log(creature2);
 
 creature1.cry();
 creature2.cry();
+creature1.puke();
+creature2.yawn();
