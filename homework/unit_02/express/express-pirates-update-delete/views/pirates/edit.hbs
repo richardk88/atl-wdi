@@ -1,0 +1,10 @@
+<h1>EDIT's for: {{pirate.name}}</h1>
+
+<form action="/pirates/{{id}}?_method=PUT" method="POST">
+    <input type="text" name="name" value="{{pirate.name}}">
+    <input type="text" name="birthplace" value="{{pirate.birthplace}}">
+    <input type="number" name="death_year" value="{{pirate.death_year}}">
+    <input type="text" name="base" value="{{pirate.base}}">
+    <input type="text" name="nickname" value="{{pirate.nickname}}">
+    <input type="submit" name="Edit" value="{{pirate.name}}">
+</form>
