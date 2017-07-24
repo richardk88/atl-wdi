@@ -11,19 +11,17 @@ class Tamagotchis {
     }
     cry () {
         this.foodInTummy--;
-        console.log('WAHH!!!');
+        console.log(this.name + 'WAHH!!!');
     }
 }
-var beepBop = new Tamagotchis();
-var fartKnocker = new Tamagotchis();
-
-console.log(beepBop);
-console.log(fartKnocker);
-
-beepBop.cry();
-fartKnocker.cry();
 
 //create new Tamagotchis
-
+var creature1 = new Tamagotchis('BeepBop', 'Water Monkey');
+var creature2 = new Tamagotchis('FartKnocker', 'Gas Monster');
 
 //test out your Tamagotchies below via console.logs
+console.log(creature1);
+console.log(creature2);
+
+creature1.cry();
+creature2.cry();
