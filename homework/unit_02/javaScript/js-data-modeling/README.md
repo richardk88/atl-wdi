@@ -270,8 +270,4 @@ Now that you've had some practice really thinking about the data design of an ap
   When you're ready to submit your work,
 
   1. Add, commit, and push your code.
-<<<<<<< HEAD
   2. Add a link to the slack channel theme along with your name and you comfort level with the homework.
-=======
-  2. Add your Github link to Schoology along with your name and you comfort level with the homework.
->>>>>>> b052ec792449f0b6ad8d99ec0236784a8673c690
