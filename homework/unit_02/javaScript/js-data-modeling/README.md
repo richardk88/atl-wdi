@@ -30,7 +30,42 @@ entities/abstractions (e.g. Senior Paws app, above) that the app might use, and 
 This app provides easy access to all your e-mail service providers in one app. The app will let you select one of your email addresses and view your e-mails for that address.
 
 ```
-Write your answer here or in a separate js file.
+1.
+User: id number, name, username, password, created date, updated date
+E-mail: id number, name, email address
+
+2. 
+var user = {
+  id: Number, 
+  name: String,
+  username: String, 
+  password: String,
+  created_date: Timestamp,
+  updated_date: Timestamp,
+  email: []
+}
+
+var eMail = {
+  id: Number,
+  name: String,
+  emailAddress: String
+}
+
+3.
+var exampleUser = {
+  id: 10,
+  name: 'John',
+  username: 'J-dawg',
+  password: '12345',
+  created_date: July 25, 2017,
+  updated_date: July 30, 2017,
+  email: [{
+    id: 5,
+    name: 'Hotmail',
+    emailAddress: 'John00@hotmail.com'
+  }]
+}
+
 ```
 
 ### 2. Radio on the Internet app
@@ -39,7 +74,38 @@ This app hosts a ton of radio stations, each featuring their own playlists of so
 
 
 ```
-Write your answer here or in a separate js file.
+1.
+Radio Station: id number, name, channel, playlist
+Playlist: id number, name, genre, songs
+
+2.
+var station = {
+  id: Number,
+  name: String,
+  channel: String,
+  playlist: []
+}
+
+var playlist = {
+  id: Number,
+  name: String,
+  genre: String,
+  songs: []
+}
+
+3.
+var exampleStation = {
+  id: 25,
+  name: 'The Beat',
+  channel: '103FM',
+  playlist: [{
+    id: 5,
+    name:'Top Hits',
+    genre: 'Rock',
+    songs: ['Don't Stop Believin', 'Free Bird', 'Smells Like Teen Spirit']
+  }]
+}
+
 ```
 
 ### 3. Rock Concert App
@@ -47,19 +113,138 @@ Write your answer here or in a separate js file.
 This app will be a tool for managing all of your favorite bands' concerts; it will keep track of their tour dates, ticket purchasing, and next recommended show.
 
 ```
-Write your answer here or in a separate js file.
+1.
+Band: id number, name, concerts, upcoming show
+Concerts: id number, name, state, date, ticket purchasing
+
+2.
+var band = {
+  id: Number,
+  name: String,
+  concerts: [],
+  next_shows: []
+}
+
+var concert = {
+  id: Number,
+  name: String, 
+  location: String,
+  date: String,
+  ticket_purchasing: []
+}
+
+3.
+var exampleBand = {
+  id: 1045,
+  name: 'Knee Boards',
+  concerts: [{
+    id: 8,
+    name: 'And Another One', 
+    location: 'Atlanta, GA',
+    date: 'September 23, 2017',
+    ticket_purchasing: ['Early Bird', 'Normal', 'At the Door']
+  }],
+  next_shows: ['The Rose is Black','You & You','Wat!']
+}
+
 ```
 
 ### 4. Coffee To-Go App
 
 This app will allow customers to browse a list of coffeeshops nearby, order drinks off of their menu, add those drinks to a shopping cart, and save that cart as a past order once the purchase is complete.
+```
+1.
+Coffee Shop: id number, name, address, coffee
+Coffee: id number, name, type, size, temperature
+
+2.
+var coffeeShop = {
+  id: Number,
+  name: String,
+  address: String,
+  coffee: []
+}
+
+var coffee = {
+  id: Number,
+  name: String,
+  type: String,
+  size: String,
+  temp: String
+}
+
+3.
+var coffeeShop = {
+  id: 123,
+  name: 'Cool Java',
+  address: '123 Lucky Street',
+  coffee: [{
+    id: 678,
+    name: 'Vanilla Bean Frap',
+    type: 'Frappuccino',
+    size: 'Large',
+    temp: 'Cold'
+  }]
+}
+
+```
 
 ### 5. Team Tracker App
 
 This app shows you all the latest stats from your favorite sports teams. You can view individual player stats and full team stats.
 
 ```
-Write your answer here or in a separate js file.
+1.
+User: id number, name, username, password, created_date, updated_date, teams
+team: id number, name, 
+
+2.
+var user = {
+  id: Number, 
+  name: String,
+  username: String, 
+  password: String,
+  created_date: Timestamp,
+  updated_date: Timestamp,
+  teams: []
+}
+
+var team = {
+  id: Number, 
+  name: String, 
+  sport: String,
+  players: [],
+  team_stats: []
+}
+
+3.
+var exampleUser = {
+  id: 456, 
+  name: 'Bill',
+  username: 'Billy99', 
+  password: '67890',
+  created_date: July 25, 2017,
+  updated_date: July 30, 2017,
+  teams: [{
+    id: 5678, 
+    name: 'Falcons', 
+    sport: 'Football',
+    players: [{
+      id: 22,
+      name: 'Matt Ryan',
+      nickname: 'Matty Ice',
+      number: 2,
+      position: 'Quarterback',
+    }],
+    team_stats: [{
+      points: 33.8,
+      yards: 415.8,
+      pass_yards: 295.3,
+      rush_yards: 120.5
+    }]
+  }]
+}
+
 ```
 
 
@@ -68,7 +253,7 @@ Write your answer here or in a separate js file.
 Q. When you were creating relationships between the models, what were some thoughts or questions you had to help guide a connection between them?
 
 ```
-Write your answer here or in a separate js file.
+Making sure the connection made sense before creating the relationship.
 ```
 
 ### Reading and Videos for Tomorrow

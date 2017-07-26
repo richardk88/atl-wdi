@@ -1,0 +1,13 @@
+<h1>User {{user._id}}</h1>
+
+<div>Name: {{user.first_name}}</div>
+<div>Email: {{user.email}}</div>
+
+<div>
+    <a href="/users/{{user._id}}/delete">Delete</a>
+    <a href="/users/{{user._id}}/edit">Edit</a>
+</div>
+<br>
+<div>
+    <a href="/users">Back to Users</a>
+</div>

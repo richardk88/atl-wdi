@@ -41,14 +41,13 @@ class Tamagotchis {
 }
 
 //create new Tamagotchis
-var creature1 = new Tamagotchis('BeepBop', 'Water Monkey');
-var creature2 = new Tamagotchis('FartKnocker', 'Gas Monster');
+var creature1 = new Tamagotchis('BeepBop', 'Water');
+var creature2 = new Tamagotchis('FartKnocker', 'Gas');
 
 //test out your Tamagotchies below via console.logs
 console.log(creature1);
-console.log(creature2);
 
 creature1.cry();
-creature2.cry();
 creature1.puke();
-creature2.yawn();
+creature1.start();
+creature1.stop();
