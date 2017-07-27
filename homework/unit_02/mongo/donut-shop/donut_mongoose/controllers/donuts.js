@@ -39,7 +39,20 @@ router.get('/new', (req, res) => {
 // SHOW
 //======================
 // Create a GET show route "/:id" that renders the donut's show page
+router.get('/:id', (req, res) => {
+    const donutIdToSearchDbFor = req.params.id;
 
+    Donut.findById(donutIdToSearchDbFor)
+        .then((donuts) => {
+            res.render(
+                'donuts/show',
+                { donuts }
+            );
+        })
+        .catch((error) => {
+            console.log(`Error retrieving user with ID of ${donutIdToSearchDbFor}`)
+        });
+});
 
 
 
