@@ -6,9 +6,11 @@
 
 	<div id="edit-form" class="donut-container-show">
 
-
-		<<<<< YOUR WHOLE FORM GOES HERE >>>>>
-
+		<form action="/{{donuts.id}}?_method=PUT" method="POST">
+			<input type="text" name="name" placeholder="name" value="{{donuts.name}}">
+			<input type="price" placeholder="price" name="price" value="{{donuts.price}}" required >
+			<input type="submit" value="Update Donut">
+		</form>
 
 		<div id="img-preview">
 			<img src="{{donut.img}}">

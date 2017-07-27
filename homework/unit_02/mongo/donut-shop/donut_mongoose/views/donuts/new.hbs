@@ -6,7 +6,12 @@
 
 	<div id="edit-form" class="donut-container-show">
 
-		<<<< YOUR WHOLE FORM GOES HERE >>>>
+		<form action="/donuts" method="POST">
+			<input type="text" name="name" placeholder="name">
+			<input type="description" placeholder="description" name="description">
+			<input type="price" placeholder="price" name="price">
+			<input type="submit" value="Create">
+		</form>
 
 	</div>
 </main>

@@ -2,7 +2,7 @@
 
 	<h2>You are viewing:
 
-		{{ donuts }}
+		{{ donuts.name }}
 
 	</h2>
 
@@ -11,37 +11,37 @@
 	<div class="donut-container-show">
 		<h2 id="donut-name">
 
-				<<<< DONUT NAME HERE >>>>
+				{{ donuts.name }}
 
 		</h2>
 
-				<<<< DONUT IMAGE HERE >>>>
+				<img src="https://www.dunkindonuts.com/content/dam/dd/img/icons/global/global-perks-donut.svg"> 
 
 		<br>
 		<h3>Description:</h3>
 			<p>
 
-				<<<< DONUT DESCRIPTION HERE >>>>
+				{{donuts.description}}
 
 			</p><br>
 		<h3>Price:</h3>
 			<p id="cost">$
 
-				<<<< DONUT PRICE HERE >>>> each</p><br>
+				{{donuts.price}}</p><br>
 
 			<h3 id="quantity">
 
-	 				<<<< DONUT QUANTITY >>>> remaining
+	 				{{donuts.qty}} remaining
 
 			</h3>
 
 			<br>
 
-			<<<< LINK TO THE DONUT's EDIT PAGE >>>>
+			<div><a href="/{{donuts.id}}/edit">Edit {{donuts.name}}</a></div
 
 			<<<< BONUS: BUTTON THAT UPDATES THE COUNT >>>>
 
 		</div>
 
-		<<<< BUTTON THAT DELETED THE DONUT >>>>
+		<a href="/donuts/{{donuts.id}}/delete">Delete</a>
 </main>

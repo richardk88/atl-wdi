@@ -1,19 +1,12 @@
 <main>
 	<h2>Handmade, Fresh, Daily!</h2>
 
-		<<<< START THE LOOP TO DISPLAY EACH DONUT >>>>
-
+		{{#each donuts}}
 			<div class="donut-container">
-
-				<<<< DONUT IMAGE HERE >>>>
-
-				<h3>   <<<< LINK TO DONUT'S SHOW PAGE, DONUT NAME AS LINK NAME >>>>   </h3>
-
-				<p>$ <<<< DONUT PRICE HERE >>>> each </p>
-
+				<img src="https://www.dunkindonuts.com/content/dam/dd/img/icons/global/global-perks-donut.svg"> 
+				<h3><a href="/{{this._id}}">Show {{this.name}}</a></h3>
+				<p>Price: {{this.price}}</p>
 			</div>
-
-		<<<< END THE LOOP >>>>
-
+		{{/each}}
 
 </main>
