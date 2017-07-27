@@ -2,13 +2,28 @@
 // REQUIREMENTS
 //======================
 // require express, router, mongoose, Donut schema
-
+const express = require('express');
+const router = express.Router();
+const mongoose = require('mongoose');
+const Donut = require('../models/donuts') ;
 
 //======================
 // INDEX
 //======================
 // Create a GET index route "/" that sends all donuts to index.hbs
-
+router.get('/', (req, res) => {
+    Donut.find({})
+        .then((donuts) => {
+            res.render (
+                'donuts/index',
+                { donuts }
+            );
+        })
+        .catch((error) => {
+            console.log('Error retrieving users from database!');
+            console.log(error);
+        });
+})
 
 
 //======================
