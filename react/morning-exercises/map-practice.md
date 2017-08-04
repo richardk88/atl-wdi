@@ -18,24 +18,28 @@
 
 	```javascript
 	const people = [
-		{
-			name: 'George Michael',
-			age: 14,
-			title: 'Mr. Manager'
-		},
-		{
-			name: 'T-Bone',
-			age: 34,
-			title: 'Arsonist'
-		},
-		{
-			name: 'George Oscar',
-			age: 32,
-			title: 'Illusionist'
-		}
+	{
+		name: 'George Michael',
+		age: 14,
+		title: 'Mr. Manager'
+	},
+	{
+		name: 'T-Bone',
+		age: 34,
+		title: 'Arsonist'
+	},
+	{
+		name: 'George Oscar',
+		age: 32,
+		title: 'Illusionist'
+	}
 	];
 
-	const names = ???
+	const names = people.map((i) => {
+		return i.name
+	});
+	
+	console.log(names)
 	```
 	
 * Return the amount of tax to charge for each of these products, assuming a tax rate of 7%: 
