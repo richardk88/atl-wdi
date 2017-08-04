@@ -7,7 +7,11 @@
 	```javascript
 	const lyrics = ['never', 'gonna', 'give', 'you', 'up'];
 
-	const uppercaseLyrics = ???
+	const uppercaseLyrics = lyrics.map((i) => {
+		return i.toUpperCase();
+	});
+	
+	console.log(uppercaseLyrics);
 	```
 	
 * Return an array of names for each of these person objects: 
