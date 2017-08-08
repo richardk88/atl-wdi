@@ -6,13 +6,16 @@ const Movie = () => {
   return (
     <section id="movie-listing">
       <div className="movie">
-        <h3>Movie Title</h3>
+        <h3>{this.props.movie.Title}</h3>
         <p>
-          <strong>Released:</strong> 1984<br />
-          <strong>Directed By:</strong> Some director<br />
-          <em>Genre:</em>
+          <strong>Released:</strong>{this.props.movie.Released}<br />
+          <strong>Directed By:</strong>{this.props.movie.Director}<br />
+          <em>Genre: {this.props.movie.Genre}</em>
         </p>
-        <p>Plotline should go inside of here</p>
+        <p>{this.props.movie.Plot}</p>
+        <div>
+        <img src={this.props.movie.Poster} alt='' />
+        </div>
       </div>
     </section>
   );
