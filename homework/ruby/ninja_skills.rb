@@ -34,14 +34,26 @@
 
 
 #Challenge 5:
-puts "Pick a number 1-10."
-number = gets.chomp.to_i
-puts number * 2
+# puts "Pick a number 1-10."
+# number = gets.chomp.to_i
+# puts number * 2
 
-puts "What's your name?"
-name = gets.chomp
+# puts "What's your name?"
+# name = gets.chomp
 
-puts "What do you like to do?"
-hobby = gets.chomp
+# puts "What do you like to do?"
+# hobby = gets.chomp
 
-puts "#{name} likes to #{hobby}"
+# puts "#{name} likes to #{hobby}"
+
+
+#Challenge 6:
+myFirstArray = []
+myFirstArray = ["a","b","c","d","e",1,2,3,4]
+puts myFirstArray.last
+puts myFirstArray.first
+myFirstArray[1] = "Joe"
+myFirstArray[2] = 3
+myFirstArray.push("true")
+puts myFirstArray[3].class
+
