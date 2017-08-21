@@ -6,8 +6,17 @@
 # puts a = !b
 
 #Challenge 2:
-a = nil
-p a
-puts "#{a} was here."
-print a
-puts a.class
+# a = nil
+# p a
+# puts "#{a} was here."
+# print a
+# puts a.class
+
+
+#Challenge 3:
+d = Fixnum
+puts d
+e = Float
+puts e 
+d = e
+puts d
