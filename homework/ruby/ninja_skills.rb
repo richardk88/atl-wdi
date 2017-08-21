@@ -48,12 +48,27 @@
 
 
 #Challenge 6:
-myFirstArray = []
-myFirstArray = ["a","b","c","d","e",1,2,3,4]
-puts myFirstArray.last
-puts myFirstArray.first
-myFirstArray[1] = "Joe"
-myFirstArray[2] = 3
-myFirstArray.push("true")
-puts myFirstArray[3].class
+# myFirstArray = []
+# myFirstArray = ["a","b","c","d","e",1,2,3,4]
+# puts myFirstArray.last
+# puts myFirstArray.first
+# myFirstArray[1] = "Joe"
+# myFirstArray[2] = 3
+# myFirstArray.push("true")
+# puts myFirstArray[3].class
+
+
+#Challenge 7:
+# myFavoritAnimals = {
+#     "Edgar": "Donkey",
+#     "Mike": "Monkey",
+#     "Fred": "Frog",
+#     "Jim": "Giraffe",
+#     "Lilly": "Lion"
+# }
+# myFavoritAnimals[:Edgar] = "Bear"
+
+# favoriteMovie = {}
+# favoriteMovie = ["movie": "Moana"]
+
 
