@@ -5,6 +5,7 @@
 # puts a = b
 # puts a = !b
 
+
 #Challenge 2:
 # a = nil
 # p a
@@ -21,11 +22,26 @@
 # d = e
 # puts d
 
+
 #Challenge 4:
-christine = "Hi, I'm Christine"
-likesTo = "long walks on the beach, kinda."
-tims = christine
-puts tims + " and I like " + likesTo
-g = "2"
-gToNumber = 2
-puts g.to_i + gToNumber
+# christine = "Hi, I'm Christine"
+# likesTo = "long walks on the beach, kinda."
+# tims = christine
+# puts tims + " and I like " + likesTo
+# g = "2"
+# gToNumber = 2
+# puts g.to_i + gToNumber
+
+
+#Challenge 5:
+puts "Pick a number 1-10."
+number = gets.chomp.to_i
+puts number * 2
+
+puts "What's your name?"
+name = gets.chomp
+
+puts "What do you like to do?"
+hobby = gets.chomp
+
+puts "#{name} likes to #{hobby}"
