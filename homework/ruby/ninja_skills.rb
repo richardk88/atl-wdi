@@ -72,3 +72,25 @@
 # favoriteMovie = ["movie": "Moana"]
 
 
+#Challenge 8:
+firstRange = (1..10).to_a
+secondRange = (1...1000).to_a
+
+for number in firstRange do
+    p number.to_s
+end
+
+x = 0
+while x < 50 do
+    puts secondRange[x]
+    x += 1
+end
+
+newArray = []
+firstRange.each_with_index do |number, index|
+    if index.even?
+        newArray << (number * 2)
+    end
+end
+puts newArray
+
