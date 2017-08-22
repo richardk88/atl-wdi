@@ -96,10 +96,25 @@
 
 
 #Challenge 9:
-sum = 0
-for i in (1...1000) do
-    if i % 3 == 0 or i % 5 == 0
-        sum += 1
-    end
+# sum = 0
+# for i in (1...1000) do
+#     if i % 3 == 0 or i % 5 == 0
+#         sum += 1
+#     end
+# end
+# puts sum
+
+
+#Final Challenge
+require "prime"
+def check_prime?(num)
+    Prime.prime?(num)
 end
-puts sum
+check_prime?(17)
+
+def get_primes(num)
+    Prime.each(num) do |prime|
+        puts prime
+    end 
+end 
+get_primes(100)
