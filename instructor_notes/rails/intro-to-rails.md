@@ -24,7 +24,7 @@
 *You should already be able to:*
 
 -   Execute ruby code in `irb` or `pry`
--   Explain the difference between HTTP request/request
+-   Explain the difference between HTTP request/response
 -   Explain MVC
 -   Describe SQL
 
@@ -68,7 +68,12 @@ The specs for this app are as follows:
 -   Create new recipes and edit existing recipes
 -   Delete recipes
 
-To begin, we can just run the following command.
+First and foremost, we must install the Rails gem:
+```
+  gem install rails
+```
+
+To begin the app, we can just run the following command.
 
 ```bash
   rails new cookbook -d postgresql
