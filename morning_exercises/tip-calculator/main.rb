@@ -4,11 +4,13 @@ subtotal = gets.chomp.to_f
 
 p subtotal
 
+#asking for number of people
 p "number of people"
 people = gets.chomp.to_f
 
 p people
 
+#asking for how much tip to leave
 puts %q{
   how much tip to leave?
   1. 15%
@@ -34,6 +36,7 @@ end
 
 p tip_percent
 
+#asking for the tax percentage
 p "What is the tax percentage? (eg 5, 6, 7)"
 tax_percent = gets.chomp.to_f
 
